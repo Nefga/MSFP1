@@ -81,8 +81,8 @@ ctrl3 = np.array([209,0,86])/255
 
 # Funciones de sistema en lazo abierto y lazo cerrado
 def openloop(t,sys,u):
-    _,PAu = ctrl.forced_response(sys,t,u,x0)
-    return PAu
+    _,Vsu = ctrl.forced_response(sys,t,u,x0)
+    return Vsu
 
 def closedloop(t,sysPID,u):
     _,PIDu = ctrl.forced_response(sysPID,t,u,x0)
@@ -90,15 +90,15 @@ def closedloop(t,sysPID,u):
 
 # Respuestas: Simulacion numericas
 for i in range(0,4):
-    Pau = openloop(t,sys,u[:,i])
+    Vsu = openloop(t,sys,u[:,i])
     PIDu = closedloop(t,sysPID,u[:,i])
     fg = plt.figure(i+1)
     fg.set_size_inches(w,h)
     plt.rcParams['font.size'] = 11
     plt.rcParams['font.family'] = 'serif'
     plt.rcParams['font.serif'] = 'Times New Roman'
-    plt.plot(t,u[:,i],'-',color=ctrl1,label='Pao(t)')
-    plt.plot(t,Pau,'--',color=ctrl2,label='PA(t)')
+    plt.plot(t,u[:,i],'-',color=ctrl1,label='Ve(t)')
+    plt.plot(t,Vsu,'--',color=ctrl2,label='Vs(t)')
     plt.plot(t,PIDu,':',linewidth=2.5,color=ctrl3,label='PID(t)')
     plt.xlim(0,10); plt.xticks(np.arange(0,11,1))
     if i == 0 or i == 1 or i == 2:
