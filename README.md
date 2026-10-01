@@ -45,7 +45,7 @@ Palabras clave: Circuito RLC; Controlador PID; Sistema respiratorio; Modelo mate
 
 1. Cuaderno computacional de MATLAB \[.mlx].
 2. Modelo de Simulink \[.slx].
-3. Archivos de python \[.py].
+3. Archivos de VSC \[.py].
 4. Imagen con los parámetros del controlador.
 5. Imágenes de las simulaciones \[.pdf y .png].
 6. Análisis matemático: Función de transferencia, modelo de ecuaciones integro-diferenciales, estabilidad y error en estado estacionario.
