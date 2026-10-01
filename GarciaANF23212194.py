@@ -99,7 +99,7 @@ for i in range(0,4):
     plt.rcParams['font.serif'] = 'Times New Roman'
     plt.plot(t,u[:,i],'-',color=ctrl1,label='Ve(t)')
     plt.plot(t,Vsu,'--',color=ctrl2,label='Vs(t)')
-    plt.plot(t,PIDu,':',linewidth=2.5,color=ctrl3,label='PID(t)')
+    plt.plot(t,PIDu,':',linewidth=2.5,color=ctrl3,label='I(t)')
     plt.xlim(0,10); plt.xticks(np.arange(0,11,1))
     if i == 0 or i == 1 or i == 2:
         plt.ylim(-0.1,1.2); plt.yticks(np.arange(-0.1,1.3,0.1))
