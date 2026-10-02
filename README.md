@@ -6,7 +6,7 @@ Practica 1: Diseño de controladores
 
 ## Información del estudiante
 
-Neltzon Farid Garci Altamirano 23212194 l23212194@tijuana.tecnm.edu.mx
+Neltzon Farid Garci Altamirano 23212194 l23212194@tijuana.tecnm.mx
 
 Modelado de Sistemas Fisiológicos
 
